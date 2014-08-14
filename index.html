@@ -1,65 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Ozofilm.github.io by OZOFILM</title>
+<head lang="en">
+<meta charset="UTF-8">
+<title>OZOFILM</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+<style>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Ozofilm.github.io</h1>
-        <p>OZOFILM</p>
+.main{
+    margin: 0 auto;
+    width: 900px;
+}
+.logo{
+    position: fixed;
+    z-index: 3;
+    opacity: 0.9;
+    margin-left: 680px;
+}
+.next{
+    position: fixed;
+    right: 30px;
+    top:350px;
+    z-index: 3;
+    color: #ffffff;
+    opacity: 0.3;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 20px;
+
+}
+.prev{
+    position: fixed;
+    left: 30px;
+    top:350px;
+    z-index: 3;
+    color: #ffffff;
+    opacity: 0.3;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 20px;
+
+}
+.watchmore{
+    width: 900px;
+    height: 200px;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 20px;
+    opacity: 0.4;
+    text-align: center;
+    line-height: 30px;
+
+}
+.about{
+    height: 80px;
+    line-height: 20px;
+    text-align: center;
+    color: lightgray;
+    font-size: 12px;
+}
+/*------------------------------------------------------------------*/
+.main1{
+    position: relative;
+}
+
+.main1 .content1 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
 
 
-        <p class="view"><a href="https://github.com/OZOFILM">View My GitHub Profile</a></p>
+.main1:hover .content1 {
+    opacity: 1;
+}
 
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+.side1{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+.text1{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text1 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text1 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main2{
+    position: relative;
+}
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+.main2 .content2 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+.main2:hover .content2 {
+    opacity: 1;
+}
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+.side2{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+.text2{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text2 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text2 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main3{
+    position: relative;
+}
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+.main3 .content3 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+.main3:hover .content3 {
+    opacity: 1;
+}
+
+
+.side3{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text3{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text3 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text3 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main4{
+    position: relative;
+}
+
+.main4 .content4 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main4:hover .content4 {
+    opacity: 1;
+}
+
+
+.side4{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text4{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text4 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text4 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main5{
+    position: relative;
+}
+
+.main5 .content5 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main5:hover .content5 {
+    opacity: 1;
+}
+
+
+.side5{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text5{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text5 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text5 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main6{
+    position: relative;
+}
+
+.main6 .content6 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main6:hover .content6 {
+    opacity: 1;
+}
+
+
+.side6{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text6{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text6 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text6 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main7{
+    position: relative;
+}
+
+.main7 .content7 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main7:hover .content7 {
+    opacity: 1;
+}
+
+
+.side7{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text7{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text7 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text7 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+</style>
+</head>
+<body vlink="#808080">
+
+
+<div class="main">
+    <div class="logo">
+        <a href="about.html"><img src="img/item/logo.svg"></a>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+    <div class="prev">
+        <a href="OZOFILM_01.html" style="text-decoration:none"><p>< HOME</p></a>
+    </div>
+    <div class="next">
+        <a href="ozofilm_02.html" style="text-decoration:none"><p>NEXT ></p></a>
+    </div>
+
+
+
+
+    <div class="main1">
+        <img src="img/item/1-01.jpg">
+        <div class="content1">
+            <img class="side1" src="img/item/side_1.png">
+            <div class="text1">
+                <p>Eddy Kim<br>Darling MV<br><span>Directed by OZO</span><br><br></p>
+
+                <a href="play screen_darling.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <img src="img/item/2-01.png">
+        <div class="content2">
+            <img class="side2" src="img/item/side_2.png">
+            <div class="text2">
+                <p>Yunwoo Kim<br>Antidote MV<br><span>Directed by OZO</span><br><br></p>
+
+                <a href="play%20screen_antidote.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <img src="img/item/3-01.jpg">
+        <div class="content3">
+            <img class="side3" src="img/item/side_3.png">
+            <div class="text3">
+                <p>Love&Hate<br>Full ver.<br><span>Directed by OZO</span><br><br></p>
+
+                <a href="play%20screen_lovehatefull.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="main4">
+        <img src="img/item/4-01.jpg">
+        <div class="content4">
+            <img class="side4" src="img/item/side_4.png">
+            <div class="text4">
+                <p>Eddy Kim<br>Push&Pull MV<br><span>Edited by OZO</span><br><br></p>
+
+                <a href="play%20screen_push.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="main5">
+        <img src="img/item/5-01.jpg">
+        <div class="content5">
+            <img class="side5" src="img/item/side_5.png">
+            <div class="text5">
+                <p>Love&Hate<br>Story ver.<br><span>Directed by OZO</span><br><br></p>
+
+                <a href="play%20screen_lovehatestory.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main6">
+        <img src="img/item/6-01.jpg">
+        <div class="content6">
+            <img class="side6" src="img/item/side_66.png">
+            <div class="text6">
+                <p>Togeworl<br>Talk to Me MV<br><span>Directed by OZO</span><br><br></p>
+
+                <a href="play%20screen_talktome.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="main7">
+        <img src="img/item/7-01.jpg">
+        <div class="content7">
+            <img class="side7" src="img/item/side_7.png">
+            <div class="text7">
+                <p>Love&Hate<br>Art ver.<br><span>Directed by OZO</span><br><br></p>
+
+                <a href="play%20screen_lovehateart.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="watchmore">
+        <a href="https://vimeo.com/couchmode/groups/264639/sort:likes/54710332" style="text-decoration:none"><p><br><br>V<br>WATCH MORE</p></a>
+    </div>
+    <div class="about">
+        <p>2014 © OZOFILM All Right Reserved.<br>Contact OZO  01075230089 or ozofilm@gmail.com</p>
+    </div>
+
+
+
+
+
+
+</div>
+<style><!--
+A:link { text-decoration:none; }
+A:visited { text-decoration:none; }
+A:active { text-decoration:none; }
+A:hover { color: #ea9721; text-decoration:underline; } --></style>
+
+</body>
 </html>
