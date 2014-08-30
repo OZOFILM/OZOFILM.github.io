@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>OZOFILM</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+<style>
+
+.main{
+    margin: 0 auto;
+    width: 900px;
+}
+.logo{
+    position: fixed;
+    z-index: 3;
+    opacity: 0.9;
+    margin-left: 680px;
+}
+.next{
+    position: fixed;
+    right: 30px;
+    top:350px;
+    z-index: 3;
+    color: #ffffff;
+    opacity: 0.3;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 20px;
+
+}
+.prev{
+    position: fixed;
+    left: 30px;
+    top:350px;
+    z-index: 3;
+    color: #ffffff;
+    opacity: 0.3;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 20px;
+
+}
+.watchmore{
+    width: 900px;
+    height: 200px;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 20px;
+    opacity: 0.4;
+    text-align: center;
+    line-height: 30px;
+
+}
+.about{
+    height: 80px;
+    line-height: 20px;
+    text-align: center;
+    color: lightgray;
+    font-size: 12px;
+}
+/*------------------------------------------------------------------*/
+.main1{
+    position: relative;
+}
+
+.main1 .content1 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+
+.main1:hover .content1 {
+    opacity: 1;
+}
+
+
+.side1{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text1{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text1 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text1 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main2{
+    position: relative;
+}
+
+.main2 .content2 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main2:hover .content2 {
+    opacity: 1;
+}
+
+
+.side2{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text2{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text2 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text2 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main3{
+    position: relative;
+}
+
+.main3 .content3 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main3:hover .content3 {
+    opacity: 1;
+}
+
+
+.side3{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text3{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text3 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text3 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main4{
+    position: relative;
+}
+
+.main4 .content4 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main4:hover .content4 {
+    opacity: 1;
+}
+
+
+.side4{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text4{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text4 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text4 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main5{
+    position: relative;
+}
+
+.main5 .content5 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main5:hover .content5 {
+    opacity: 1;
+}
+
+
+.side5{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text5{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text5 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text5 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main6{
+    position: relative;
+}
+
+.main6 .content6 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main6:hover .content6 {
+    opacity: 1;
+}
+
+
+.side6{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text6{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text6 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text6 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+/*------------------------------------------------------------------*/
+.main7{
+    position: relative;
+}
+
+.main7 .content7 {
+    opacity: 0;
+    transition: opacity .15s ease-in;
+}
+
+.main7:hover .content7 {
+    opacity: 1;
+}
+
+
+.side7{
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+
+.text7{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    z-index: 2;
+    top: 0px;
+    color: #ffffff;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+.text7 span{
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: 'Aldrich', sans-serif;
+    line-height: 60px;
+}
+.text7 a{
+    margin-left: 18px;
+    width: 18px;
+    height: 18px;
+}
+</style>
+</head>
+<body vlink="#808080">
+
+
+<div class="main">
+    <div class="logo">
+        <a href="logo%20click.html"><img src="img/item/logo.svg"></a>
+    </div>
+    <div class="prev">
+        <a href="OZOFILM_01.html" style="text-decoration:none"><p>< HOME</p></a>
+    </div>
+    <div class="next">
+        <a href="about.html" style="text-decoration:none"><p>ABOUT ></p></a>
+    </div>
+
+
+
+
+
+    <div class="main2">
+        <img src="img/item/3_side_2.png">
+        <div class="content2">
+            <img class="side2" src="img/item/peach.png">
+            <div class="text2">
+                <p>Motion Graphic<br>Reel<br><span>Made by OZO</span><br><br></p>
+
+                <a href="play%203-1.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main1">
+        <img src="img/item/3_side_1.png">
+        <div class="content1">
+            <img class="side1" src="img/item/brown.png">
+            <div class="text1">
+                <p>Saygoodbye<br>Short Film<br><span>Directed by OZO</span><br><br></p>
+
+                <a href="play%203-2.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main3">
+        <img src="img/item/3_side_3.png">
+        <div class="content3">
+            <img class="side3" src="img/item/side_7.png">
+            <div class="text3">
+                <p>Where is<br>my brain?<br>Motion Graphic<br><span>Directed by OZO</span><br></p>
+
+                <a href="play%203-3.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="main4">
+        <img src="img/item/3_side_4.png">
+        <div class="content4">
+            <img class="side4" src="img/item/olive.png">
+            <div class="text4">
+                <p>Aurora<br>Projection<br>Mapping<br><span></span><br></p>
+
+                <a href="play%203-4.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main5">
+        <img src="img/item/3_side_5.png">
+        <div class="content5">
+            <img class="side5" src="img/item/lightgrey.png">
+            <div class="text5">
+                <p>Park sol<br>Like water MV<br><span>Directed by OZO</span><br><br></p>
+
+                <a href="play%203-5.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main7">
+        <img src="img/item/3_side_7.png">
+        <div class="content7">
+            <img class="side7" src="img/item/side_4.png">
+            <div class="text7">
+                <p><br>Stalking<br>Short Film<br><span></span><br></p>
+
+                <a href="play%203-6.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main6">
+        <img src="img/item/3_side_6.png">
+        <div class="content6">
+            <img class="side6" src="img/item/darkred.png">
+            <div class="text6">
+                <p><br>Break up<br>Short Film<br><span></span><br></p>
+
+                <a href="play%203-7.html" class="playbutton"><img src="img/item/play%20button%20circle.png"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="watchmore">
+        <a href="https://vimeo.com/couchmode/groups/264639/sort:likes/54710332" style="text-decoration:none"><p><br><br>V<br>WATCH MORE</p></a>
+    </div>
+    <div class="about">
+        <p>2014 © OZOFILM All Right Reserved.<br>Contact OZO  01075230089 or ozofilm@gmail.com</p>
+    </div>
+
+
+
+
+
+
+</div>
+<style><!--
+A:link { text-decoration:none; }
+A:visited { text-decoration:none; }
+A:active { text-decoration:none; }
+A:hover { color: #ea9721; text-decoration:underline; } --></style>
+
+</body>
+</html>
